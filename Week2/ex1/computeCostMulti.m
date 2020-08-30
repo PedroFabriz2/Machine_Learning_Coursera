@@ -13,9 +13,9 @@ J = 0;
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
 
+sqrError = sum(((X*theta) - y).^2);
 
-
-
+J = sqrError/(2*m);
 
 % =========================================================================
 

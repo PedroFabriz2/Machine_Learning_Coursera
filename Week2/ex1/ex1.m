@@ -82,6 +82,9 @@ fprintf('%f\n', theta);
 fprintf('Expected theta values (approx)\n');
 fprintf(' -3.6303\n  1.1664\n\n');
 
+J = computeCost(X, y, theta);
+fprintf('%f\n', J);
+
 % Plot the linear fit
 hold on; % keep previous plot visible
 plot(X(:,2), X*theta, '-')
